@@ -79,7 +79,6 @@ int main()
 
     for (int i = 0; i < ThreadsNumber; i++)
     {
-        
         struct fill_cache fill ;
         fill.id=i;
         pthread_create(&T[i], NULL, &threadCounting, &fill);
